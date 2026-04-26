@@ -2,7 +2,9 @@
 
 ### Data
 
-Below is the directory structure. You should only need to use data within the nodes and edges directories. If you want to run get_data.sh yourself, you need get_data.sh, join_gene_family.py, join_hgnc.py, and hetionet-v1.0-edges.sif.gz in the same directory and have a conda environment named ete3_env with requests and pandas installed. hetionet-v1.0-edges.sif.gz could not be curled and has to be downloaded directly from https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz. 
+Below is the directory structure. You should only need to use data within the nodes and edges directories. There are different types of edges, so in case it was easier to have them separated, there is a directory that separates gene_drug_edges.tsv into three separate tsvs. 
+
+If you want to run get_data.sh yourself, you need get_data.sh, join_gene_family.py, join_hgnc.py, and hetionet-v1.0-edges.sif.gz in the same directory and have a conda environment named ete3_env with requests and pandas installed. hetionet-v1.0-edges.sif.gz could not be curled and has to be downloaded directly from https://github.com/hetio/hetionet/blob/main/hetnet/tsv/hetionet-v1.0-edges.sif.gz. 
 
 warning -  gene_family_edges.tsv may include gene duplicates bc some genes are in multiple families 
 
