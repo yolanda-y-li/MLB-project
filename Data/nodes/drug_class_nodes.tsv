@@ -1,0 +1,345 @@
+Pharmacologic Class::N0000000069	Calcium Channel Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000070	Angiotensin 2 Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000083	Leukotriene Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000100	Estrogen Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000102	Norepinephrine Uptake Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000104	Cholinergic Muscarinic Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000106	Prostaglandin Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000109	Serotonin Uptake Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000111	Folic Acid Metabolism Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000114	Dopamine Uptake Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000115	Progestational Hormone Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000116	GABA B Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000122	Adrenergic Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000125	Cholinergic Muscarinic Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000144	Iron Chelating Activity	Pharmacologic Class
+Pharmacologic Class::N0000000146	Androgen Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000150	Protein Synthesis Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000151	Histamine H2 Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000154	Opioid Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000160	Cyclooxygenase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000166	alpha Glucosidase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000168	Selective Estrogen Receptor Modulators	Pharmacologic Class
+Pharmacologic Class::N0000000174	Opioid Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000176	Topoisomerase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000183	Acetyl Aldehyde Dehydrogenase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000190	Histamine H1 Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000191	Dihydrofolate Reductase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000194	Somatostatin Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000196	GABA A Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000202	beta Lactamase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000206	Xanthine Oxidase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000207	Histamine Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000209	Adrenergic alpha-Agonists	Pharmacologic Class
+Pharmacologic Class::N0000000233	Nucleic Acid Synthesis Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000235	Carbonic Anhydrase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000236	Alkylating Activity	Pharmacologic Class
+Pharmacologic Class::N0000000239	P-Glycoprotein Interactions	Pharmacologic Class
+Pharmacologic Class::N0000000243	Androgen Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000000246	HIV Protease Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000000250	Melatonin Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000005760	Aminosalicylic Acids	Pharmacologic Class
+Pharmacologic Class::N0000005934	Progesterone	Pharmacologic Class
+Pharmacologic Class::N0000006014	Pyrethrins	Pharmacologic Class
+Pharmacologic Class::N0000006165	Triiodothyronine	Pharmacologic Class
+Pharmacologic Class::N0000006269	Vitamin A	Pharmacologic Class
+Pharmacologic Class::N0000006276	Vitamin B 12	Pharmacologic Class
+Pharmacologic Class::N0000006277	Vitamin D	Pharmacologic Class
+Pharmacologic Class::N0000006290	Vitamin K	Pharmacologic Class
+Pharmacologic Class::N0000006320	Vasopressins	Pharmacologic Class
+Pharmacologic Class::N0000006337	Ergocalciferols	Pharmacologic Class
+Pharmacologic Class::N0000006496	Nicotine	Pharmacologic Class
+Pharmacologic Class::N0000006688	Carnitine	Pharmacologic Class
+Pharmacologic Class::N0000006801	Bile Acids and Salts	Pharmacologic Class
+Pharmacologic Class::N0000006806	Amino Acids	Pharmacologic Class
+Pharmacologic Class::N0000006996	Cholecalciferol	Pharmacologic Class
+Pharmacologic Class::N0000006999	Urea	Pharmacologic Class
+Pharmacologic Class::N0000007151	Folic Acid	Pharmacologic Class
+Pharmacologic Class::N0000007196	Iodine	Pharmacologic Class
+Pharmacologic Class::N0000007246	Estradiol	Pharmacologic Class
+Pharmacologic Class::N0000007522	Allylamine	Pharmacologic Class
+Pharmacologic Class::N0000007529	Macrolides	Pharmacologic Class
+Pharmacologic Class::N0000007530	Anthracyclines	Pharmacologic Class
+Pharmacologic Class::N0000007542	Benzodiazepines	Pharmacologic Class
+Pharmacologic Class::N0000007544	Phenothiazines	Pharmacologic Class
+Pharmacologic Class::N0000007556	Dihydropyridines	Pharmacologic Class
+Pharmacologic Class::N0000007566	Benzylamines	Pharmacologic Class
+Pharmacologic Class::N0000007568	Oxazolidinones	Pharmacologic Class
+Pharmacologic Class::N0000007570	Pyridines	Pharmacologic Class
+Pharmacologic Class::N0000007606	Quinolones	Pharmacologic Class
+Pharmacologic Class::N0000007618	Ergolines	Pharmacologic Class
+Pharmacologic Class::N0000007620	Ergot Alkaloids	Pharmacologic Class
+Pharmacologic Class::N0000007621	Ergotamines	Pharmacologic Class
+Pharmacologic Class::N0000007632	Thyroxine	Pharmacologic Class
+Pharmacologic Class::N0000007641	Nicotinic Acids	Pharmacologic Class
+Pharmacologic Class::N0000007647	Nitrates	Pharmacologic Class
+Pharmacologic Class::N0000007658	Nitrofurans	Pharmacologic Class
+Pharmacologic Class::N0000007659	Nitrogen Mustard Compounds	Pharmacologic Class
+Pharmacologic Class::N0000007663	Nitroimidazoles	Pharmacologic Class
+Pharmacologic Class::N0000007672	Polyenes	Pharmacologic Class
+Pharmacologic Class::N0000007681	Amides	Pharmacologic Class
+Pharmacologic Class::N0000007683	Organometallic Compounds	Pharmacologic Class
+Pharmacologic Class::N0000007698	Biguanides	Pharmacologic Class
+Pharmacologic Class::N0000007700	Retinoids	Pharmacologic Class
+Pharmacologic Class::N0000007706	Prostaglandins	Pharmacologic Class
+Pharmacologic Class::N0000007707	Diphosphonates	Pharmacologic Class
+Pharmacologic Class::N0000007710	Prostaglandins E, Synthetic	Pharmacologic Class
+Pharmacologic Class::N0000007715	Catecholamines	Pharmacologic Class
+Pharmacologic Class::N0000007770	Deoxyuridine	Pharmacologic Class
+Pharmacologic Class::N0000007780	Vinca Alkaloids	Pharmacologic Class
+Pharmacologic Class::N0000007822	Polymyxins	Pharmacologic Class
+Pharmacologic Class::N0000007853	Aminoglycosides	Pharmacologic Class
+Pharmacologic Class::N0000007883	Amphetamines	Pharmacologic Class
+Pharmacologic Class::N0000007888	Bismuth	Pharmacologic Class
+Pharmacologic Class::N0000007889	Glycopeptides	Pharmacologic Class
+Pharmacologic Class::N0000007893	Glycosaminoglycans	Pharmacologic Class
+Pharmacologic Class::N0000007909	Psoralens	Pharmacologic Class
+Pharmacologic Class::N0000007911	Rifamycins	Pharmacologic Class
+Pharmacologic Class::N0000007948	Tetracyclines	Pharmacologic Class
+Pharmacologic Class::N0000007961	Heparin, Low-Molecular-Weight	Pharmacologic Class
+Pharmacologic Class::N0000007983	Hydroxy Acids	Pharmacologic Class
+Pharmacologic Class::N0000008010	Cannabinoids	Pharmacologic Class
+Pharmacologic Class::N0000008016	Barbiturates	Pharmacologic Class
+Pharmacologic Class::N0000008048	Sulfonamides	Pharmacologic Class
+Pharmacologic Class::N0000008053	Sulfones	Pharmacologic Class
+Pharmacologic Class::N0000008054	Sulfonylurea Compounds	Pharmacologic Class
+Pharmacologic Class::N0000008065	Purines	Pharmacologic Class
+Pharmacologic Class::N0000008118	Xanthines	Pharmacologic Class
+Pharmacologic Class::N0000008157	Cardiac Glycosides	Pharmacologic Class
+Pharmacologic Class::N0000008217	Azoles	Pharmacologic Class
+Pharmacologic Class::N0000008241	Androstanes	Pharmacologic Class
+Pharmacologic Class::N0000008330	Cardiac Rhythm Alteration	Pharmacologic Class
+Pharmacologic Class::N0000008478	Decreased Cell Wall Integrity	Pharmacologic Class
+Pharmacologic Class::N0000008479	Decreased Cell Wall Synthesis & Repair	Pharmacologic Class
+Pharmacologic Class::N0000008486	Decreased Central Nervous System Disorganized Electrical Activity	Pharmacologic Class
+Pharmacologic Class::N0000008553	Decreased Cholesterol Absorption	Pharmacologic Class
+Pharmacologic Class::N0000008556	Decreased Coagulation Factor Activity	Pharmacologic Class
+Pharmacologic Class::N0000008577	Decreased DNA Replication	Pharmacologic Class
+Pharmacologic Class::N0000008638	Decreased GnRH Secretion	Pharmacologic Class
+Pharmacologic Class::N0000008663	Decreased Immunologically Active Molecule Activity	Pharmacologic Class
+Pharmacologic Class::N0000008683	Decreased Leukotriene Production	Pharmacologic Class
+Pharmacologic Class::N0000008732	Decreased Mitosis	Pharmacologic Class
+Pharmacologic Class::N0000008779	Decreased Parasympathetic Acetylcholine Activity	Pharmacologic Class
+Pharmacologic Class::N0000008832	Decreased Platelet Aggregation	Pharmacologic Class
+Pharmacologic Class::N0000008836	Decreased Prostaglandin Production	Pharmacologic Class
+Pharmacologic Class::N0000008841	Decreased Protein Synthesis	Pharmacologic Class
+Pharmacologic Class::N0000008853	Decreased RNA Replication	Pharmacologic Class
+Pharmacologic Class::N0000008859	Decreased Renal K+ Excretion	Pharmacologic Class
+Pharmacologic Class::N0000008867	Decreased Respiratory Secretion Viscosity	Pharmacologic Class
+Pharmacologic Class::N0000008953	Decreased Striated Muscle Contraction	Pharmacologic Class
+Pharmacologic Class::N0000009010	Decreased Tracheobronchial Stretch Receptor Activity	Pharmacologic Class
+Pharmacologic Class::N0000009022	Digestive/GI System Activity Alteration	Pharmacologic Class
+Pharmacologic Class::N0000009034	Emesis Suppression	Pharmacologic Class
+Pharmacologic Class::N0000009048	GI Motility Alteration	Pharmacologic Class
+Pharmacologic Class::N0000009059	Genitourinary Arterial Vasodilation	Pharmacologic Class
+Pharmacologic Class::N0000009065	Hematologic Activity Alteration	Pharmacologic Class
+Pharmacologic Class::N0000009079	Increased Acetylcholine Activity	Pharmacologic Class
+Pharmacologic Class::N0000009176	Increased Cellular Death	Pharmacologic Class
+Pharmacologic Class::N0000009267	Increased Cytokine Activity	Pharmacologic Class
+Pharmacologic Class::N0000009269	Increased Cytokine Production	Pharmacologic Class
+Pharmacologic Class::N0000009282	Increased Dopamine Activity	Pharmacologic Class
+Pharmacologic Class::N0000009371	Increased Large Intestinal Motility	Pharmacologic Class
+Pharmacologic Class::N0000009393	Increased Medullary Respiratory Drive	Pharmacologic Class
+Pharmacologic Class::N0000009456	Increased Norepinephrine Activity	Pharmacologic Class
+Pharmacologic Class::N0000009526	Increased Prostaglandin Activity	Pharmacologic Class
+Pharmacologic Class::N0000009724	Inhibition Gastric Acid Secretion	Pharmacologic Class
+Pharmacologic Class::N0000009801	Photosensitizing Activity	Pharmacologic Class
+Pharmacologic Class::N0000009871	Stimulation Large Intestine Fluid/Electrolyte Secretion	Pharmacologic Class
+Pharmacologic Class::N0000009905	Vascular Sclerosing Activity	Pharmacologic Class
+Pharmacologic Class::N0000009909	Vasodilation	Pharmacologic Class
+Pharmacologic Class::N0000009911	Venous Vasodilation	Pharmacologic Class
+Pharmacologic Class::N0000009916	Lipase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000009917	Adrenergic alpha1-Agonists	Pharmacologic Class
+Pharmacologic Class::N0000009918	Adrenergic alpha2-Agonists	Pharmacologic Class
+Pharmacologic Class::N0000009922	Adrenergic beta2-Agonists	Pharmacologic Class
+Pharmacologic Class::N0000009923	Adrenergic beta1-Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000009924	Adrenergic beta2-Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000009945	Antidiuretic Hormone Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000009947	Nucleoside Reverse Transcriptase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000009948	Non-Nucleoside Reverse Transcriptase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000009963	Thrombin Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000009982	Decreased Sebaceous Gland Activity	Pharmacologic Class
+Pharmacologic Class::N0000010217	Photoabsorption	Pharmacologic Class
+Pharmacologic Class::N0000010258	X-Ray Contrast Activity	Pharmacologic Class
+Pharmacologic Class::N0000010259	Ultrasound Contrast Activity	Pharmacologic Class
+Pharmacologic Class::N0000010262	Neurokinin 1 Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000010288	Osmotic Activity	Pharmacologic Class
+Pharmacologic Class::N0000011161	Cephalosporins	Pharmacologic Class
+Pharmacologic Class::N0000011272	Thiazolidinediones	Pharmacologic Class
+Pharmacologic Class::N0000011280	Prostaglandins I	Pharmacologic Class
+Pharmacologic Class::N0000011281	Penicillins	Pharmacologic Class
+Pharmacologic Class::N0000011294	Carbapenems	Pharmacologic Class
+Pharmacologic Class::N0000011301	Progesterone Congeners	Pharmacologic Class
+Pharmacologic Class::N0000011310	Aldosterone Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000011311	Monobactams	Pharmacologic Class
+Pharmacologic Class::N0000011402	Estradiol Congeners	Pharmacologic Class
+Pharmacologic Class::N0000011414	Ketolides	Pharmacologic Class
+Pharmacologic Class::N0000011418	Streptogramins	Pharmacologic Class
+Pharmacologic Class::N0000020000	Receptor Tyrosine Kinase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000020015	NMDA Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000020019	Glucosylceramide Synthase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000020024	Sclerosing Activity	Pharmacologic Class
+Pharmacologic Class::N0000020026	Phosphodiesterase 5 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000020060	DNA Polymerase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000020074	Phosphate Chelating Activity	Pharmacologic Class
+Pharmacologic Class::N0000020081	Increased Calcium-sensing Receptor Sensitivity	Pharmacologic Class
+Pharmacologic Class::N0000166469	Thiazides	Pharmacologic Class
+Pharmacologic Class::N0000166489	Quaternary Ammonium Compounds	Pharmacologic Class
+Pharmacologic Class::N0000166743	Esters	Pharmacologic Class
+Pharmacologic Class::N0000167094	Benzothiazoles	Pharmacologic Class
+Pharmacologic Class::N0000167510	Estrogens, Conjugated (USP)	Pharmacologic Class
+Pharmacologic Class::N0000170118	PPAR alpha	Pharmacologic Class
+Pharmacologic Class::N0000170119	PPAR gamma	Pharmacologic Class
+Pharmacologic Class::N0000171131	Allergens	Pharmacologic Class
+Pharmacologic Class::N0000171207	Porphyrinogens	Pharmacologic Class
+Pharmacologic Class::N0000175073	Platinum-containing Compounds	Pharmacologic Class
+Pharmacologic Class::N0000175075	Proteasome Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175076	Protein Kinase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175080	Aromatase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175084	Gonadotropin Releasing Hormone Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000175085	Microtubule Inhibition	Pharmacologic Class
+Pharmacologic Class::N0000175086	Phosphodiesterase 3 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175087	Urease Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175089	Calcium Chelating Activity	Pharmacologic Class
+Pharmacologic Class::N0000175359	Increased Diuresis	Pharmacologic Class
+Pharmacologic Class::N0000175361	Catecholamine Synthesis Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175365	Bile-acid Binding Activity	Pharmacologic Class
+Pharmacologic Class::N0000175366	Increased Diuresis at Loop of Henle	Pharmacologic Class
+Pharmacologic Class::N0000175370	Cholinergic Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000175372	Appetite Suppression	Pharmacologic Class
+Pharmacologic Class::N0000175374	Peroxisome Proliferator-activated Receptor Activity	Pharmacologic Class
+Pharmacologic Class::N0000175375	Peroxisome Proliferator-activated Receptor alpha Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175379	Arteriolar Vasodilation	Pharmacologic Class
+Pharmacologic Class::N0000175433	pleuromutilin	Pharmacologic Class
+Pharmacologic Class::N0000175436	Neuraminidase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175442	Lincosamides	Pharmacologic Class
+Pharmacologic Class::N0000175445	Chemokine Co-receptor 5 Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000175448	Potassium Channel Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000175450	Corticosteroid Hormone Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175456	Chloride Channel Activators	Pharmacologic Class
+Pharmacologic Class::N0000175459	Nucleoside Analog	Pharmacologic Class
+Pharmacologic Class::N0000175460	Non-Nucleoside Analog	Pharmacologic Class
+Pharmacologic Class::N0000175469	Pyrophosphate Analog	Pharmacologic Class
+Pharmacologic Class::N0000175472	Metal Chelating Activity	Pharmacologic Class
+Pharmacologic Class::N0000175479	Amphenicols	Pharmacologic Class
+Pharmacologic Class::N0000175508	Lipopeptides	Pharmacologic Class
+Pharmacologic Class::N0000175512	Methylated Sulfonamides	Pharmacologic Class
+Pharmacologic Class::N0000175513	Dipeptidase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175516	RNA Synthetase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175533	Dyes	Pharmacologic Class
+Pharmacologic Class::N0000175542	M2 Protein Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175547	Reduction Activity	Pharmacologic Class
+Pharmacologic Class::N0000175549	Cystine Disulfide Reduction	Pharmacologic Class
+Pharmacologic Class::N0000175550	Decreased Immunologic Activity	Pharmacologic Class
+Pharmacologic Class::N0000175624	mTOR Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175628	Decreased Histamine Release	Pharmacologic Class
+Pharmacologic Class::N0000175629	Increased Histamine Release	Pharmacologic Class
+Pharmacologic Class::N0000175632	Decreased Fibrinolysis	Pharmacologic Class
+Pharmacologic Class::N0000175635	Factor Xa Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175644	Decreased Autonomic Ganglionic Activity	Pharmacologic Class
+Pharmacologic Class::N0000175650	Decreased Sympathetic Activity	Pharmacologic Class
+Pharmacologic Class::N0000175651	Increased Sympathetic Activity	Pharmacologic Class
+Pharmacologic Class::N0000175654	Gonadotropin Releasing Hormone Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175684	Full Opioid Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175685	Partial Opioid Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175686	Competitive Opioid Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000175702	Partial Cholinergic Nicotinic Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175721	Nonsteroidal Anti-inflammatory Compounds	Pharmacologic Class
+Pharmacologic Class::N0000175728	Central Nervous System Depression	Pharmacologic Class
+Pharmacologic Class::N0000175729	Central Nervous System Stimulation	Pharmacologic Class
+Pharmacologic Class::N0000175730	Centrally-mediated Muscle Relaxation	Pharmacologic Class
+Pharmacologic Class::N0000175732	Neuromuscular Nondepolarizing Blockade	Pharmacologic Class
+Pharmacologic Class::N0000175733	Neuromuscular Depolarizing Blockade	Pharmacologic Class
+Pharmacologic Class::N0000175735	Decreased Striated Muscle Tone	Pharmacologic Class
+Pharmacologic Class::N0000175755	DOPA Decarboxylase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175761	Monoamine Oxidase-B Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175763	Serotonin 1b Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175764	Serotonin 1d Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175788	Adenosine Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175799	Dopamine D2 Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000175808	Hydroxyphenylpyruvate Dioxygenase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175817	Serotonin 3 Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000175830	Inhibit Ovum Fertilization	Pharmacologic Class
+Pharmacologic Class::N0000175833	Acidifying Activity	Pharmacologic Class
+Pharmacologic Class::N0000175850	Melanin Synthesis Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175851	Depigmenting Activity	Pharmacologic Class
+Pharmacologic Class::N0000175862	Magnetic Resonance Contrast Activity	Pharmacologic Class
+Pharmacologic Class::N0000175912	Dipeptidyl Peptidase 4 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175914	Increased Coagulation Factor VIII Activity	Pharmacologic Class
+Pharmacologic Class::N0000175915	Increased Coagulation Factor VIII Concentration	Pharmacologic Class
+Pharmacologic Class::N0000175917	Thyroid Hormone Synthesis Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175921	Adrenal Steroid Synthesis Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175955	5-Lipoxygenase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175960	Increased Glutathione Concentration	Pharmacologic Class
+Pharmacologic Class::N0000175962	Lead Chelating Activity	Pharmacologic Class
+Pharmacologic Class::N0000175964	Vitamin K Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000175965	Increased Prothrombin Activity	Pharmacologic Class
+Pharmacologic Class::N0000175967	Thrombopoietin Receptor Interactions	Pharmacologic Class
+Pharmacologic Class::N0000175968	Thrombopoietin Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000175969	Increased Megakaryocyte Maturation	Pharmacologic Class
+Pharmacologic Class::N0000175970	Increased Platelet Production	Pharmacologic Class
+Pharmacologic Class::N0000175972	Decreased Platelet Production	Pharmacologic Class
+Pharmacologic Class::N0000175975	General Anesthesia	Pharmacologic Class
+Pharmacologic Class::N0000175976	Local Anesthesia	Pharmacologic Class
+Pharmacologic Class::N0000175982	Reversed Anticoagulation Activity	Pharmacologic Class
+Pharmacologic Class::N0000178324	Increased Hematopoietic Stem Cell Mobilization	Pharmacologic Class
+Pharmacologic Class::N0000178477	Decreased Blood Pressure	Pharmacologic Class
+Pharmacologic Class::N0000178478	Increased Blood Pressure	Pharmacologic Class
+Pharmacologic Class::N0000180999	Angiotensin 2 Type 1 Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000181815	Sphingosine 1-Phosphate Receptor Modulators	Pharmacologic Class
+Pharmacologic Class::N0000181819	Uncompetitive NMDA Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000182137	Cytochrome P450 2D6 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000182138	Cytochrome P450 1A2 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000182139	Cytochrome P450 2B6 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000182140	Cytochrome P450 2C19 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000182141	Cytochrome P450 3A4 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000182143	P2Y12 Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000182147	Sigma-1 Receptor Agonists	Pharmacologic Class
+Pharmacologic Class::N0000182638	HCV NS3/4A Protease Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000182728	Potassium Channel Openers	Pharmacologic Class
+Pharmacologic Class::N0000182960	Phosphodiesterase 4 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000184143	Carbamoyl Phosphate Synthetase 1 Activators	Pharmacologic Class
+Pharmacologic Class::N0000184145	Chloride Channel Activation Potentiators	Pharmacologic Class
+Pharmacologic Class::N0000184148	Smoothened Receptor Antagonists	Pharmacologic Class
+Pharmacologic Class::N0000184306	Cell-mediated Immunity	Pharmacologic Class
+Pharmacologic Class::N0000185007	Adrenergic beta3-Agonists	Pharmacologic Class
+Pharmacologic Class::N0000185499	Guanylate Cyclase Activators	Pharmacologic Class
+Pharmacologic Class::N0000185503	P-Glycoprotein Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000185504	Cytochrome P450 2C9 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000185506	Cytochrome P450 3A4 Inducers	Pharmacologic Class
+Pharmacologic Class::N0000185507	Cytochrome P450 2C9 Inducers	Pharmacologic Class
+Pharmacologic Class::N0000185607	Cytochrome P450 2C19 Inducers	Pharmacologic Class
+Pharmacologic Class::N0000186774	Diarylquinolines	Pharmacologic Class
+Pharmacologic Class::N0000186778	Microsomal Triglyceride Transfer Protein Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000187058	Sodium-Glucose Transporter 2 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000187061	Organic Cation Transporter 2 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000187062	Cytochrome P450 2C8 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000187063	Cytochrome P450 2C8 Inducers	Pharmacologic Class
+Pharmacologic Class::N0000187064	Cytochrome P450 2B6 Inducers	Pharmacologic Class
+Pharmacologic Class::N0000190107	Organic Anion Transporting Polypeptide 1B1 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000190108	Organic Anion Transporting Polypeptide 1B3 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000190109	Organic Anion Transporting Polypeptide 2B1 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000190110	Organic Anion Transporter 1 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000190111	Organic Anion Transporter 3 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000190113	Breast Cancer Resistance Protein Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000190114	Cytochrome P450 3A Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000190115	Cytochrome P450 3A5 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000190118	Cytochrome P450 3A Inducers	Pharmacologic Class
+Pharmacologic Class::N0000190482	Phenylalanine Hydroxylase Activators	Pharmacologic Class
+Pharmacologic Class::N0000190855	Vesicular Monoamine Transporter 2 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191258	RNA Replicase Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191264	P-Glycoprotein Inducers	Pharmacologic Class
+Pharmacologic Class::N0000191265	Organic Cation Transporter 1 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191266	Cytochrome P450 1A2 Inducers	Pharmacologic Class
+Pharmacologic Class::N0000191267	Cytochrome P450 2D6 Inducers	Pharmacologic Class
+Pharmacologic Class::N0000191269	UDP Glucuronosyltransferases Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191272	UGT1A1 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191273	UGT2B7 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191274	UGT2B15 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191275	UGT1A3 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191276	UGT1A4 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191277	UGT1A6 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191278	UGT1A9 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191280	Lipoglycopeptides	Pharmacologic Class
+Pharmacologic Class::N0000191423	Multidrug and Toxin Extrusion Transporter 1 Inhibitors	Pharmacologic Class
+Pharmacologic Class::N0000191624	Cytochrome P450 1A Inducers	Pharmacologic Class
