@@ -6,6 +6,7 @@ Below is the directory structure. You should only need to use data within the no
 
 warning -  gene_family_edges.tsv may include gene duplicates bc some genes are in multiple families 
 
+```
 Data/
 ├── edges/
 │   ├── class_drug_edges.tsv
@@ -37,4 +38,8 @@ Data/
 ├── scripts/
 │    ├── join_gene_family.py
 │    └── join_hgnc.py
-├── get_data.sh
+└── get_data.sh
+
+```
+
+
