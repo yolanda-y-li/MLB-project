@@ -359,9 +359,9 @@ def main():
         print(f"\n{i}. Avg Metric: {avg:.4f}")
         print(f"   AUROC={r.get('test_auroc', 'N/A'):.4f} AP={r.get('test_ap', 'N/A'):.4f} "
               f"F1={r.get('test_f1', 'N/A'):.4f}")
-            dropout_str = f"{r.get('dropout'):.1f}" if r.get('dropout') is not None else "N/A"
-            lr_str = f"{r.get('lr'):.1e}" if r.get('lr') is not None else "N/A"
-            print(f"   hidden_dim={r.get('hidden_dim')} num_layers={r.get('num_layers')} "
+        dropout_str = f"{r.get('dropout'):.1f}" if r.get('dropout') is not None else "N/A"
+        lr_str = f"{r.get('lr'):.1e}" if r.get('lr') is not None else "N/A"
+        print(f"   hidden_dim={r.get('hidden_dim')} num_layers={r.get('num_layers')} "
               f"dropout={dropout_str} lr={lr_str}")
         print(f"   batch_size={r.get('batch_size')} neg_ratio={r.get('neg_ratio')}")
     
