@@ -5,8 +5,10 @@ Usage:
     python main.py [options]
 
 Key options:
-    --hidden_dim    embedding / hidden size (default 64)
-    --num_layers    R-GCN depth (default 2)
+    --hidden_dim    embedding / hidden size (default 128)
+    --num_layers    R-GCN depth (default 3)
+    --dropout       dropout rate (default 0.05)
+    --lr            learning rate (default 0.005)
     --epochs        number of training epochs (default 100)
     --neg_strategy  "edge_swap" (default) or "random"
     --device        "cuda" / "cpu" (auto-detected if omitted)
@@ -128,10 +130,10 @@ def run_epoch(model, edge_index_dict, pairs, labels, optimizer, criterion,
 
 def parse_args():
     p = argparse.ArgumentParser(description="Gene-Drug Interaction R-GCN")
-    p.add_argument("--hidden_dim",    type=int,   default=64)
-    p.add_argument("--num_layers",    type=int,   default=2)
-    p.add_argument("--dropout",       type=float, default=0.2)
-    p.add_argument("--lr",            type=float, default=1e-3)
+    p.add_argument("--hidden_dim",    type=int,   default=128)
+    p.add_argument("--num_layers",    type=int,   default=3)
+    p.add_argument("--dropout",       type=float, default=0.05)
+    p.add_argument("--lr",            type=float, default=5e-3)
     p.add_argument("--weight_decay",  type=float, default=1e-5)
     p.add_argument("--epochs",        type=int,   default=100)
     p.add_argument("--batch_size",    type=int,   default=4096)
@@ -207,7 +209,7 @@ def main():
     optimizer = optim.Adam(model.parameters(), lr=args.lr,
                            weight_decay=args.weight_decay)
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode="max", patience=7, factor=0.5, verbose=False
+        optimizer, mode="max", patience=7, factor=0.5
     )
     criterion = nn.CrossEntropyLoss()
 
@@ -280,7 +282,7 @@ def main():
         },
         save_path,
     )
-    print(f"\nCheckpoint saved → {save_path}")
+    print(f"\nCheckpoint saved -> {save_path}")
 
 
 if __name__ == "__main__":

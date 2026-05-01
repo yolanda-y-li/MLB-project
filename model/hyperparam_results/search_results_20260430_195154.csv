@@ -1,0 +1,2 @@
+run_id,phase,hidden_dim,num_layers,dropout,lr,weight_decay,batch_size,neg_ratio,neg_strategy,train_auroc,train_ap,train_f1,train_loss,val_auroc,val_ap,val_f1,val_loss,test_auroc,test_ap,test_f1,test_loss,time_seconds,status,notes
+1,2A_architecture,32,1,,,1e-05,4096,,,,,,,,,,0.7892,0.8452,0.6209,0.6044,0.787,27.22,error,Non-zero exit code: 1

@@ -60,6 +60,12 @@ Given a (gene, compound) pair, the model predicts whether the interaction is "bi
 
 **Results (default settings):** AUROC 0.857 · AP 0.648 · F1 0.631
 
+**Best tuned configuration:** hidden_dim 128 · num_layers 3 · dropout 0.05 · lr 0.005
+
+**Best results found in this workspace:** AUROC 0.8917 · AP 0.7555 · F1 0.7038
+
+These values are now the defaults in `model/main.py`.
+
 #### Running the model
 
 Install dependencies:
