@@ -89,13 +89,14 @@ def main():
         metadata=train_graph.metadata(),
     ).to(device)
     stamp(f"  built in {time.time()-t:.1f}s "
-          f"(params: {sum(p.numel() for p in model.parameters()):,})")
+          "(param count deferred until lazy layers initialize)")
 
     stamp("First full-graph encode (lazy SAGEConv init — usually the slowest step) …")
     t = time.time()
     with torch.no_grad():
         x = model.encode(train_graph.edge_index_dict)
-    stamp(f"  first encode finished in {time.time()-t:.1f}s")
+    stamp(f"  first encode finished in {time.time()-t:.1f}s "
+          f"(params after init: {sum(p.numel() for p in model.parameters()):,})")
 
     if ckpt_path is not None:
         stamp("Loading checkpoint state …")
