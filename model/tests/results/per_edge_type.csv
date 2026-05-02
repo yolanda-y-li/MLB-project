@@ -1,0 +1,7 @@
+split,true_class,n,accuracy_correct_class,mean_prob_true_class,top1_confusion_class,top1_confusion_share,auroc_vs_no_interaction
+val,binds,1178,0.771647,0.719402,no_interaction,0.218166,0.936082
+val,upregulates,1862,0.609023,0.518291,no_interaction,0.341031,0.863936
+val,downregulates,2102,0.661275,0.541936,no_interaction,0.309229,0.862452
+test,binds,1177,0.774002,0.720153,no_interaction,0.217502,0.93943
+test,upregulates,1827,0.617406,0.518434,no_interaction,0.335523,0.866434
+test,downregulates,2140,0.662617,0.547871,no_interaction,0.31028,0.868802

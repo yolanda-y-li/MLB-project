@@ -1,0 +1,3 @@
+negative_strategy,n_pos,n_neg,auroc_macro,ap_macro,f1_macro,accuracy
+edge_swap,5144,5144,0.878771,0.724019,0.689711,0.688569
+random,5144,5144,0.960686,0.89244,0.796888,0.817749
