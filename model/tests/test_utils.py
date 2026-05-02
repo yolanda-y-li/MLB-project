@@ -12,6 +12,7 @@ model from scratch with the same default config so the tests can still run.
 from __future__ import annotations
 
 import sys
+import time
 from pathlib import Path
 from typing import Dict, Tuple
 
@@ -19,6 +20,11 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
+
+
+def _log(msg: str):
+    """Always-flush logger so progress is visible during long runs."""
+    print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
 
 # Allow running scripts from anywhere
 THIS_DIR = Path(__file__).parent
@@ -61,9 +67,16 @@ def get_device(force: str | None = None) -> torch.device:
 
 
 def find_checkpoint() -> Path | None:
-    ckpt = MODEL_DIR / "checkpoints" / "best_model.pt"
-    if ckpt.exists():
-        return ckpt
+    """Look in a few common spots so a hand-placed best_model.pt is found."""
+    candidates = [
+        MODEL_DIR / "checkpoints" / "best_model.pt",
+        MODEL_DIR / "best_model.pt",
+        PROJECT_DIR / "best_model.pt",
+        PROJECT_DIR / "checkpoints" / "best_model.pt",
+    ]
+    for c in candidates:
+        if c.exists():
+            return c
     return None
 
 
@@ -84,54 +97,108 @@ def build_model(info: dict, cfg: dict, metadata) -> GeneDrugRGCN:
     )
 
 
+# --- shared in-process caches: every test reuses the same model + encoded
+# graph + split predictions, so we don't re-load data and re-encode once
+# per test (which on CPU was the dominant cost). -----------------------------
+_LOAD_CACHE: dict = {}
+_X_DICT_CACHE: dict = {}
+_PRED_CACHE: dict = {}
+
+
 def load_or_train(cfg: dict | None = None, device: torch.device | None = None,
                   verbose: bool = True):
     """
     Returns (model, train_graph, splits, info, used_cfg).
     Loads checkpoint if present, otherwise trains a fresh model with cfg.
+    Cached after the first call within the same Python process.
     """
+    if "result" in _LOAD_CACHE:
+        return _LOAD_CACHE["result"]
     cfg = {**DEFAULT_CFG, **(cfg or {})}
     device = device or get_device()
 
-    if verbose:
-        print(f"[test_utils] Device: {device}")
-        print(f"[test_utils] Loading data with seed={cfg['seed']}, "
-              f"neg_strategy={cfg['neg_strategy']}, neg_ratio={cfg['neg_ratio']}")
+    # Peek at checkpoint first so we can build the model with the right
+    # architecture hyperparams (whoever trained it may have used different
+    # hidden_dim / num_layers / dropout than today's defaults).
+    ckpt = find_checkpoint()
+    ckpt_args = None
+    if ckpt is not None:
+        try:
+            peek = torch.load(ckpt, map_location="cpu")
+            ckpt_args = peek.get("args") if isinstance(peek, dict) else None
+        except Exception as exc:
+            if verbose:
+                print(f"[test_utils] Could not peek at checkpoint args: {exc}")
 
+    if ckpt_args:
+        for key in ("hidden_dim", "num_layers", "dropout",
+                    "neg_strategy", "neg_ratio", "seed"):
+            if key in ckpt_args and ckpt_args[key] is not None:
+                cfg[key] = ckpt_args[key]
+        if verbose:
+            _log(f"Using config from checkpoint: "
+                 f"hidden_dim={cfg['hidden_dim']} num_layers={cfg['num_layers']} "
+                 f"dropout={cfg['dropout']} seed={cfg['seed']}")
+
+    if verbose:
+        _log(f"Device: {device}")
+        _log(f"Loading data with seed={cfg['seed']}, "
+             f"neg_strategy={cfg['neg_strategy']}, neg_ratio={cfg['neg_ratio']}")
+
+    t0 = time.time()
     train_graph, splits, info = load_data(
         neg_strategy=cfg["neg_strategy"],
         neg_ratio=cfg["neg_ratio"],
         seed=cfg["seed"],
     )
+    if verbose:
+        _log(f"Data loaded in {time.time() - t0:.1f}s — "
+             f"genes={info['n_genes']:,} drugs={info['n_drugs']:,} "
+             f"families={info['n_families']:,} "
+             f"train_pairs={len(splits['train'][0]):,} "
+             f"test_pairs={len(splits['test'][0]):,}")
     train_graph = train_graph.to(device)
 
+    if verbose:
+        _log("Building model …")
+    t0 = time.time()
     model = build_model(info, cfg, train_graph.metadata()).to(device)
+    if verbose:
+        _log(f"Model built in {time.time() - t0:.1f}s")
 
-    # SAGEConv(-1, -1) lazy init
+    # SAGEConv(-1, -1) lazy init — this is the first full graph encode and
+    # is usually the single most expensive step on CPU.
+    if verbose:
+        _log("Lazy-initializing SAGEConv weights with one full graph encode "
+             "(this is the slow step on CPU) …")
+    t0 = time.time()
     with torch.no_grad():
         model.encode(train_graph.edge_index_dict)
+    if verbose:
+        _log(f"Lazy init / first encode finished in {time.time() - t0:.1f}s")
 
-    ckpt = find_checkpoint()
     if ckpt is not None:
         if verbose:
-            print(f"[test_utils] Loading checkpoint from {ckpt}")
+            _log(f"Loading checkpoint from {ckpt}")
         state = torch.load(ckpt, map_location=device)
-        # `state` is the dict saved by main.py
         model_state = state.get("model_state", state)
         try:
             model.load_state_dict({k: v.to(device) for k, v in model_state.items()})
+            if verbose:
+                _log("Checkpoint loaded OK")
         except RuntimeError as exc:
             if verbose:
-                print(f"[test_utils] Checkpoint shape mismatch ({exc}); retraining from scratch.")
+                _log(f"Checkpoint shape mismatch ({exc}); retraining from scratch.")
             ckpt = None
 
     if ckpt is None:
         if verbose:
-            print("[test_utils] No usable checkpoint — training from scratch.")
+            _log("No usable checkpoint — training from scratch.")
         _train_in_place(model, train_graph, splits, cfg, device, verbose)
 
     model.eval()
-    return model, train_graph, splits, info, cfg
+    _LOAD_CACHE["result"] = (model, train_graph, splits, info, cfg)
+    return _LOAD_CACHE["result"]
 
 
 def _train_in_place(model, train_graph, splits, cfg, device, verbose):
@@ -221,13 +288,26 @@ def _train_in_place(model, train_graph, splits, cfg, device, verbose):
 # ---------------------------------------------------------------------------
 
 @torch.no_grad()
-def predict_split(model, train_graph, pairs: torch.Tensor, batch_size: int = 4096,
-                  device: torch.device | None = None) -> np.ndarray:
-    """Returns probs [N, NUM_CLASSES]."""
-    device = device or next(model.parameters()).device
-    pairs = pairs.to(device)
+def get_x_dict(model, train_graph):
+    """Encode the full graph once; subsequent calls reuse the cached x_dict."""
+    if "x_dict" in _X_DICT_CACHE:
+        return _X_DICT_CACHE["x_dict"]
+    _log("Encoding full graph (one-time, cached for the rest of the run) …")
+    t0 = time.time()
     model.eval()
     x_dict = model.encode(train_graph.edge_index_dict)
+    _X_DICT_CACHE["x_dict"] = x_dict
+    _log(f"Graph encoded in {time.time() - t0:.1f}s")
+    return x_dict
+
+
+@torch.no_grad()
+def predict_split(model, train_graph, pairs: torch.Tensor, batch_size: int = 4096,
+                  device: torch.device | None = None) -> np.ndarray:
+    """Returns probs [N, NUM_CLASSES]. The expensive graph encode is cached."""
+    device = device or next(model.parameters()).device
+    pairs = pairs.to(device)
+    x_dict = get_x_dict(model, train_graph)
     out = []
     n = len(pairs)
     for start in range(0, n, batch_size):
@@ -241,12 +321,17 @@ def predict_split(model, train_graph, pairs: torch.Tensor, batch_size: int = 409
 
 def get_split_predictions(model, train_graph, splits, split_name: str = "test",
                           batch_size: int = 4096):
+    """Cached per (split_name) so we don't re-predict each test."""
+    if split_name in _PRED_CACHE:
+        return _PRED_CACHE[split_name]
     pairs, labels = splits[split_name]
     probs = predict_split(model, train_graph, pairs, batch_size=batch_size)
     preds = probs.argmax(axis=-1)
-    return {
+    result = {
         "pairs": pairs.cpu().numpy(),
         "labels": labels.cpu().numpy(),
         "probs": probs,
         "preds": preds,
     }
+    _PRED_CACHE[split_name] = result
+    return result
